@@ -2,5 +2,13 @@
 // You should implement your task here.
 
 module.exports = function towelSort (matrix) {
-  return [];
+    if (matrix !==undefined){
+    for (let i=1; i<matrix.length; i=i+2){
+        matrix [i] = matrix[i].reverse();
+    }
+    let bigMatrix = matrix.flat();
+    return bigMatrix;
+    }  else {
+        return [];
+    } 
 }
